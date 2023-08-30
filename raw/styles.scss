@@ -5,6 +5,8 @@ $grid-breakpoints: (
   lg: 992px,
 ) !default;
 
+$font-size-base: 1.25rem;
+
 // Configuration
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
@@ -37,10 +39,6 @@ $variant-colors: (
   "dark-text": #f7f7f7,
 ) !default;
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   * {
     font-family: "Montserrat", sans-serif;
@@ -50,8 +48,12 @@ body {
       display: block;
     }
   }
+  font-size: $font-size-base;
   color: map-get($variant-colors, "default-text");
   background-color: map-get($variant-colors, "default-background");
+  small {
+    font-size: $font-size-base * 0.7;
+  }
 }
 
 header {
@@ -63,17 +65,11 @@ header {
   background-color: map-get($variant-colors, "default-background");
   .header-links {
     a {
-      font-size: 20px;
       font-weight: 600;
       color: map-get($variant-colors, "default-text");
       text-decoration: none;
     }
   }
-}
-
-p,
-a {
-  font-size: 1.125rem;
 }
 
 .container {
@@ -109,7 +105,6 @@ a.styled-link {
 
 .descriptor {
   cursor: default;
-  font-size: 1.375rem;
   font-weight: 600;
   padding-top: 1rem;
   padding-left: 60px;
@@ -236,7 +231,6 @@ footer {
     border-style: solid;
     h4 {
       font-weight: 500;
-      font-size: 1.75rem;
     }
     svg {
       width: 2.25rem;
@@ -266,13 +260,5 @@ footer {
     p {
       margin: 0 0 0.5rem 0;
     }
-  }
-}
-
-footer {
-  p,
-  a {
-    font-size: 0.85rem;
-    line-height: 1;
   }
 }
