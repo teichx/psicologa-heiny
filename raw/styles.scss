@@ -56,6 +56,10 @@ body {
   }
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 header {
   top: 0;
   left: 0;
@@ -188,13 +192,14 @@ $custom-colors: "default", "highlight", "secondary", "dark";
 
 section,
 footer {
-  min-height: 90vh;
+  min-height: 100vh;
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 2.5%;
   padding-right: 2.5%;
   display: flex;
   align-items: center;
+  scroll-snap-align: center;
   &.minimal {
     display: block;
     min-height: auto;
@@ -244,13 +249,6 @@ footer {
 }
 
 #contact {
-  // a,
-  // a.styled-link {
-  //   color: $highlight-primary;
-  //   &::after {
-  //     background-color: $highlight-primary;
-  //   }
-  // }
   .contact-types {
     p,
     a,
