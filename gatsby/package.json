@@ -13,7 +13,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint src",
+    "lint": "eslint src --max-warnings=0",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
