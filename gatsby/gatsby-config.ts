@@ -35,8 +35,20 @@ const config: GatsbyConfig = {
         ],
         web: [
           {
-            name: 'Open Sans',
-            file: 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap',
+            name: 'Allura',
+            file: 'https://fonts.googleapis.com/css2?family=Allura&display=swap',
+          },
+          {
+            name: 'Cormorant Garamond',
+            file: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap',
+          },
+          {
+            name: 'Sacramento',
+            file: 'https://fonts.googleapis.com/css2?family=Sacramento&display=swap',
+          },
+          {
+            name: 'Crimson Text',
+            file: 'https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap',
           },
         ],
       },
