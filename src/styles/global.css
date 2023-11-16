@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply mb-3;
+  }
+  h1 {
+    @apply font-allura text-6xl font-normal;
+  }
+  h2 {
+    @apply font-sacramento text-5xl;
+  }
+  h3 {
+    @apply font-sacramento text-3xl;
+  }
+  p {
+    @apply font-crimson text-2xl;
+  }
+}
+
+@layer components {
+  .custom-container {
+    @apply container py-10 mx-auto flex justify-center items-center w-full h-screen flex-wrap;
+  }
+}
