@@ -16,4 +16,20 @@ export const Language = {
     Legend: ["A Psicanálise é, em sua essência, ", "uma cura pelo amor!"],
     LegendAuthor: "-Sigmund Freud",
   },
+  CVV: {
+    Attention: "Atenção:",
+    InstitutePhone: {
+      Number: "+55188",
+      Label: "188 (CVV)",
+    },
+    InstituteSite: {
+      Url: "https://www.cvv.org.br/",
+      Label: "www.cvv.org.br",
+    },
+    Text: [
+      "{Attention} Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise ou risco de suicídio.",
+      "Em caso de crise, ligue para {PhoneNumber} ou acesse o site {Site}.",
+      "Em caso de emergência, procure atendimento em um hospital mais próximo.",
+    ],
+  },
 } as const;

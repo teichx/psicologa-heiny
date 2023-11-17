@@ -53,6 +53,29 @@ const IndexPage: FC<PageProps> = () => (
         </div>
       </div>
     </div>
+
+    <section className="bg-gray-900 text-white">
+      <div
+        className="container mx-auto px-5 py-[2.5%] text-xl"
+        dangerouslySetInnerHTML={{
+          __html: Language.CVV.Text.map((x) =>
+            x
+              .replaceAll(
+                "{Attention}",
+                `<span>${Language.CVV.Attention}</span>`
+              )
+              .replaceAll(
+                "{PhoneNumber}",
+                `<a href="tel:${Language.CVV.InstitutePhone.Number}" class="text-linkColor hover:underline">${Language.CVV.InstitutePhone.Label}</a>`
+              )
+              .replaceAll(
+                "{Site}",
+                `<a href="${Language.CVV.InstituteSite.Url}" target="_blank" class="text-linkColor hover:underline">${Language.CVV.InstituteSite.Label}</a>`
+              )
+          ).join("<br />"),
+        }}
+      />
+    </section>
   </div>
 );
 

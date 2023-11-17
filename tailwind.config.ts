@@ -18,6 +18,7 @@ const config: Config = {
         sacramento: "Sacramento, cursive",
       },
       colors: {
+        linkColor: "#f54eb8",
         primary: {
           bg: "#701851",
           main: "#f7f7f7",
