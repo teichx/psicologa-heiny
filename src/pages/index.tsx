@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { Language } from "../i18n/Language";
 import FirsSectionBackground from "../images/pexels-anna-tarazevich-6486618-purple.jpg";
 import FirstSectionImage from "../images/196-centered.jpg";
+import AboutMeImage from "../images/232.jpg";
 import { Footer, Menu } from "../components";
 
 const IndexPage: FC<PageProps> = () => (
@@ -53,6 +54,31 @@ const IndexPage: FC<PageProps> = () => (
         </div>
       </div>
     </div>
+
+    <section id={Language.Menu.About.Id} className="bg-white py-[5%]">
+      <div className="container px-5 mx-auto flex items-center justify-between flex-wrap">
+        <div className="w-full mx-auto lg:w-5/12 lg:mx-0">
+          <div className="w-100 h-0 pb-[100%] relative">
+            <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-linkColor">
+              <img
+                src={AboutMeImage}
+                className="w-[98%] h-[98%] absolute top-[1%] left-[1%] object-cover rounded-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full lg:w-6/12">
+          <h2 className="font-crimson mb-6">{Language.AboutMe.Title}</h2>
+
+          {Language.AboutMe.Text.map((paragraph) => (
+            <p className="text-lg" key={paragraph}>
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      </div>
+    </section>
 
     <section className="bg-gray-900 text-white">
       <div

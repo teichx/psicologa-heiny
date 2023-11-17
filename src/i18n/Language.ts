@@ -39,6 +39,15 @@ export const Language = {
     Legend: ["A Psicanálise é, em sua essência, ", "uma cura pelo amor!"],
     LegendAuthor: "-Sigmund Freud",
   },
+  AboutMe: {
+    Title: "Sobre",
+    Text: [
+      "Olá, como vai? Me chamo Heiny Domingos de Freitas, sou formada em Psicologia pela Faculdade Pitágoras, atuo através da abordagem psicanalítica lacaniana.",
+      "Durante a minha trajetória acadêmica, trabalhei nos setores de clínica, em escolas, projetos sociais. Possuo experiência com temáticas como: ansiedade, depressão, relacionamentos amorosos, alcoolismo, acompanhamento de gestantes, luto, questões familiares.",
+      "Acredito que a Psicologia é uma ferramenta fundamental para auxiliar as pessoas a lidarem com seus conflitos internos, compreenderem suas emoções e se desenvolverem pessoalmente. Por isso, tenho grande satisfação em atuar nessa área e contribuir para o bem-estar dos meus pacientes.",
+      "Acredito que a empatia, o respeito e a confidencialidade são fundamentais em um processo terapêutico. Por isso, atendo meus pacientes de forma individualizada, respeitando suas particularidades e necessidades.",
+    ],
+  },
   CVV: {
     Attention: "Atenção:",
     InstitutePhone: {
