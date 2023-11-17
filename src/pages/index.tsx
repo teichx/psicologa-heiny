@@ -47,8 +47,13 @@ const IndexPage: FC<PageProps> = () => (
           </div>
 
           <div className="w-full mx-auto mb-8 lg:w-6/12 lg:mx-0">
-            <div className="w-100">
-              <img src={FirstSectionImage} className="rounded-full" />
+            <div className="w-100 h-0 pb-[100%] relative">
+              <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-gold">
+                <img
+                  src={FirstSectionImage}
+                  className="w-[98%] h-[98%] absolute top-[1%] left-[1%] object-cover rounded-full"
+                />
+              </div>
             </div>
           </div>
         </div>
