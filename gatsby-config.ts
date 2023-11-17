@@ -12,7 +12,9 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        name: "Heiny Domingos - Psicóloga clinica",
+        short_name: "Heiny Domingos - Psicóloga clinica",
+        icon: "src/images/logo-square-with-background.png",
       },
     },
     "gatsby-plugin-sharp",
