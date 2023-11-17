@@ -19,6 +19,9 @@ const config: Config = {
       },
       colors: {
         linkColor: "#f54eb8",
+        gold: "#a77636",
+        defaultBackground: "#6a1b5e",
+
         primary: {
           bg: "#701851",
           main: "#f7f7f7",

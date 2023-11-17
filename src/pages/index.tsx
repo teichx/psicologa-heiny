@@ -3,7 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import { Language } from "../i18n/Language";
 import FirsSectionBackground from "../images/pexels-anna-tarazevich-6486618-purple.jpg";
 import FirstSectionImage from "../images/196-centered.jpg";
-import { Menu } from "../components";
+import { Footer, Menu } from "../components";
 
 const IndexPage: FC<PageProps> = () => (
   <div className="relative">
@@ -12,7 +12,7 @@ const IndexPage: FC<PageProps> = () => (
     <div className="absolute w-full h-full top-0 left-0 right-0 bottom-0 z-[-1]">
       <img
         src={FirsSectionBackground}
-        className="absolute w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
+        className="fixed w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
       />
     </div>
 
@@ -76,6 +76,8 @@ const IndexPage: FC<PageProps> = () => (
         }}
       />
     </section>
+
+    <Footer />
   </div>
 );
 
