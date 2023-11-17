@@ -26,6 +26,14 @@ const config: GatsbyConfig = {
       __key: "images",
     },
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /src\/images\/.*\.svg/, // See below to configure properly
+        },
+      },
+    },
+    {
       resolve: "gatsby-omni-font-loader",
       options: {
         enableListener: true,
