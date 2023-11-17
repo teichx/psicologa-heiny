@@ -39,6 +39,32 @@ export const Language = {
     Legend: ["A Psicanálise é, em sua essência, ", "uma cura pelo amor!"],
     LegendAuthor: "-Sigmund Freud",
   },
+  Services: {
+    Title: "Serviços ofertados",
+    Modes: {
+      Online: {
+        Title: "Atendimento Online",
+        Text: "O atendimento psicológico virtual é devidamente regulamentado pelo Conselho Federal de Psicologia e deve seguir todos os princípios éticos e de sigilo, adotados em atendimentos presenciais. O atendimento ocorre através de plataformas de vídeo, como o Google Meet.",
+      },
+      FaceToFace: {
+        Title: "Atendimento Presencial",
+        Text: "Os atendimentos são realizados semanalmente, com duração de 50 minutos, em consultório localizado na cidade de Betim. O espaço está equipado e preparado para recebê-lo, sendo necessária a realização de agendamento prévio.",
+      },
+    },
+    Topics: {
+      Title: "Temas que trabalho",
+      Items: [
+        "Ansiedade",
+        "Depressão",
+        "Conflitos familiares",
+        "Morte e luto",
+        "Adoecimento",
+        "Conflitos amorosos",
+        "Desenvolvimento pessoal",
+        "Sexualidade e identidade de gênero",
+      ],
+    },
+  },
   AboutMe: {
     Title: "Sobre",
     Text: [

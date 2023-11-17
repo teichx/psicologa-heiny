@@ -4,7 +4,7 @@ import { Language } from "../i18n/Language";
 import FirsSectionBackground from "../images/pexels-anna-tarazevich-6486618-purple.jpg";
 import FirstSectionImage from "../images/196-centered.jpg";
 import AboutMeImage from "../images/232.jpg";
-import { Footer, Menu } from "../components";
+import { Footer, Menu, Service } from "../components";
 
 const IndexPage: FC<PageProps> = () => (
   <div className="relative">
@@ -54,6 +54,48 @@ const IndexPage: FC<PageProps> = () => (
         </div>
       </div>
     </div>
+
+    <section id={Language.Menu.Services.Id} className="py-[5%] text-white">
+      <div className="container px-5 mx-auto">
+        <div className="w-full flex flex-wrap items-stretch justify-between">
+          <div className="w-full xl:w-5/12 flex flex-col justify-between">
+            <h2 className="font-crimson">{Language.Services.Title}</h2>
+
+            <div className="h-full mb-10 flex items-center">
+              <div>
+                <h3 className="font-crimson my-8">
+                  {Language.Services.Topics.Title}
+                </h3>
+
+                <div className="md:grid md:grid-cols-2 2xl:grid-cols-[300px_330px]">
+                  {Language.Services.Topics.Items.map((paragraph) => (
+                    <div key={paragraph}>
+                      <p className="mb-0">{paragraph}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="w-full xl:w-6/12">
+            <div className="lg:grid grid-cols-2 gap-5">
+              <Service
+                variant="online"
+                title={Language.Services.Modes.Online.Title}
+                text={Language.Services.Modes.Online.Text}
+              />
+
+              <Service
+                variant="faceToFace"
+                title={Language.Services.Modes.FaceToFace.Title}
+                text={Language.Services.Modes.FaceToFace.Text}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section id={Language.Menu.About.Id} className="bg-white py-[5%]">
       <div className="container px-5 mx-auto flex items-center justify-between flex-wrap">
