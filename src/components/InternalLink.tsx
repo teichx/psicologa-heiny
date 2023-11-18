@@ -1,11 +1,33 @@
 import React, { AnchorHTMLAttributes, DetailedHTMLProps, FC } from "react";
 
 export const InternalLink: FC<
-  DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
+  Omit<
+    DetailedHTMLProps<
+      AnchorHTMLAttributes<HTMLAnchorElement>,
+      HTMLAnchorElement
+    >,
+    "onClick"
+  >
 > = ({ href, ...props }) => {
-  const _ = "";
+  const hrefParsed = href?.startsWith("#") ? href : `#${href || ""}`;
 
   return (
-    <a href={href?.startsWith("#") ? href : `#${href || ""}`} {...props} />
+    <a
+      href={hrefParsed}
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+
+        const destiny = document.querySelector(hrefParsed);
+        if (!destiny) return;
+
+        destiny.scrollIntoView({
+          inline: "center",
+          block: "center",
+          behavior: "smooth",
+        });
+      }}
+      {...props}
+    />
   );
 };
