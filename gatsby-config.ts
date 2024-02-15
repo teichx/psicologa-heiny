@@ -7,7 +7,12 @@ const config: GatsbyConfig = {
   },
   graphqlTypegen: false,
   plugins: [
-    "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require(`postcss-preset-env`)({ stage: 0 })],
+      },
+    },
     "gatsby-plugin-image",
     {
       resolve: "gatsby-plugin-manifest",
