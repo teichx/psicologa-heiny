@@ -16,7 +16,6 @@ export const InternalLink: FC<
       href={hrefParsed}
       onClick={(e) => {
         e.preventDefault();
-        e.stopPropagation();
 
         const destiny = document.querySelector(hrefParsed);
         if (!destiny) return;
