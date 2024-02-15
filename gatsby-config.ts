@@ -48,22 +48,16 @@ const config: GatsbyConfig = {
           "https://fonts.googleapis.com",
           "https://fonts.gstatic.com",
         ],
+        custom: [
+          {
+            name: "Amsterdam Four",
+            file: "/fonts/amsterdam-four.woff2",
+          },
+        ],
         web: [
           {
-            name: "Allura",
-            file: "https://fonts.googleapis.com/css2?family=Allura&display=swap",
-          },
-          {
-            name: "Cormorant Garamond",
-            file: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap",
-          },
-          {
-            name: "Sacramento",
-            file: "https://fonts.googleapis.com/css2?family=Sacramento&display=swap",
-          },
-          {
-            name: "Crimson Text",
-            file: "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap",
+            name: "Questrial",
+            file: "https://fonts.googleapis.com/css2?family=Questrial&display=swap",
           },
         ],
       },

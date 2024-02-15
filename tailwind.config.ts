@@ -7,15 +7,13 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ["Crimson Text", "serif"],
-      serif: ["Crimson Text", "serif"],
+      sans: ["Questrial", "sans-serif"],
+      serif: ["Questrial", "sans-serif"],
     },
     extend: {
       fontFamily: {
-        allura: "Allura, cursive",
-        cormorant: "Cormorant Garamond, serif",
-        crimson: "Crimson Text, serif",
-        sacramento: "Sacramento, cursive",
+        amsterdam: "Amsterdam Four, serif",
+        questrial: "Questrial, sans-serif",
       },
       colors: {
         linkColor: "#f54eb8",

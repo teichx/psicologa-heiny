@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import FirsSectionBackground from "../images/pexels-anna-tarazevich-6486618-gold.jpg";
-import FirstSectionImage from "../images/with-circle-2.png";
+import FirsSectionBackground from "../images/background.jpg";
+import FirstSectionImage from "../images/with-circle-3.png";
 import AboutMeImage from "../images/232.jpg";
 import { Footer, Menu } from "../components";
 
@@ -12,30 +12,29 @@ const IndexPage: FC<PageProps> = () => (
     <div className="absolute w-full h-full top-0 left-0 right-0 bottom-0 z-[-1]">
       <img
         src={FirsSectionBackground}
-        className="fixed w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
+        className="fixed w-full h-full top-0 left-0 right-0 bottom-0 object-cover bg-[#d3d3d1]"
+        style={{ filter: "blur(6px)" }}
       />
     </div>
 
-    <div id="home" className="text-[#252525]">
+    <div id="home" className="text-[#222]">
       <div className="w-full min-h-screen flex justify-center items-center relative z-1">
         <div className="container mx-auto flex flex-wrap items-center justify-around pt-[120px]">
           <div className="w-full order-2 lg:w-5/12 lg:ml-1/12 xl:w-5/12 lg:order-none">
-            <div className="w-full mx-auto text-right">
-              <h2 className="font-crimson text-[3.125rem] sm:text-[2.95rem] md:text-[3.6rem] lg:text-[2rem] xl:text-[2.125rem] 2xl:text-[2.25rem]">
+            <div className="w-full ml-auto text-right xl:w-[540px]">
+              <h2 className="text-[1.35rem] font-light">
                 <span>Psicóloga clínica CRP 04/70574</span>
               </h2>
 
-              <h1 className="text-8xl my-7 sm:text-[6.375rem] md:text-[7.75rem] lg:text-7xl xl:text-7xl 2xl:text-8xl text-[#fff]">
+              <h1 className="my-7 text-[#000] text-7xl wf-amsterdam-four wf-[amsterdam-four] wf-amsterdam wf-[amsterdam] font-amsterdam">
                 Heiny Domingos
               </h1>
 
-              <div className="mt-6 max-w-[450px] ml-auto md:max-w-[450px] lg:max-w-[380px] xl:max-w-[450px]">
-                <h3 className="font-crimson ml-auto mr-0 max-w-[250px] sm:max-w-full text-4xl mb-0 md:text-4xl lg:text-3xl xl:text-3xl 2xl:text-4xl">
+              <div className="mt-[5rem]">
+                <h3 className="text-[1.5rem] ml-auto mr-0 text-center sm:max-w-full">
                   A Psicanálise é, em sua essência, <br /> uma cura pelo amor!
                 </h3>
-                <h4 className="text-right text-2xl md:text-2xl">
-                  -Sigmund Freud
-                </h4>
+                <h4 className="text-[1.5rem] text-right">Sigmund Freud</h4>
               </div>
             </div>
           </div>
@@ -49,7 +48,13 @@ const IndexPage: FC<PageProps> = () => (
       </div>
     </div>
 
-    <section id="services" className="py-[5%] text-[#2f2f2f]">
+    <section
+      id="services"
+      className="py-[5%] text-[#2f2f2f]"
+      style={{
+        background: "linear-gradient(-180deg, transparent, #ffffff)",
+      }}
+    >
       <div className="container px-5 mx-auto">
         <div className="w-full flex flex-wrap items-stretch justify-between">
           <div className="w-full xl:w-5/12 flex flex-col">
@@ -165,5 +170,15 @@ const IndexPage: FC<PageProps> = () => (
 export default IndexPage;
 
 export const Head: HeadFC = () => (
-  <title>Heiny Domingos - Psicóloga clínica</title>
+  <>
+    <title>Heiny Domingos - Psicóloga clínica</title>
+
+    <link
+      rel="preload"
+      href="/fonts/amsterdam-four.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />
+  </>
 );

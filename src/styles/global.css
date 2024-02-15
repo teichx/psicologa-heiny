@@ -13,20 +13,28 @@
     @apply mb-3;
   }
   h1 {
-    @apply font-allura text-5xl font-normal;
+    @apply text-5xl font-normal;
   }
   h2 {
-    @apply font-sacramento text-4xl;
+    @apply text-4xl;
   }
   h3 {
-    @apply font-sacramento text-2xl;
+    @apply text-2xl;
   }
   p {
-    @apply font-crimson text-xl;
+    @apply text-xl;
   }
 }
 
 @layer components {
+  @font-face {
+    font-family: "Amsterdam Four";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/amsterdam-four.woff2) format("woff2");
+  }
+
   html,
   body {
     -webkit-tap-highlight-color: transparent;
@@ -101,10 +109,10 @@
     }
 
     &.menu-on-top {
-      @apply absolute top-0 left-0 z-10 w-full text-[#fff];
+      @apply absolute top-0 left-0 z-10 w-full text-[#000];
       animation: appear 0.75s;
       .butterfly-logo path {
-        fill: #fff;
+        fill: #a77636;
       }
     }
     &.menu-on-scroll {

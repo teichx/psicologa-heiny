@@ -9,7 +9,7 @@ import { InternalLink } from "../InternalLink";
 const linkClass = "text-lg hover:text-linkColor hover:underline";
 
 export const Footer = () => (
-  <footer>
+  <footer style={{ backdropFilter: "blur(12px)" }}>
     <div className="container px-5 mx-auto flex justify-between items-center py-[5%] z-2 relative text-[#2f2f2f] flex-wrap">
       <div className="w-full mx-auto mb-5 lg:w-3/12 lg:mx-0 lg:mb-0 max-w-[200px]">
         <div className="w-[200px]">

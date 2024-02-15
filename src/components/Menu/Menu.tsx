@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { InternalLink } from "../InternalLink";
 import Butterfly from "-!svg-react-loader!../../images/butterfly.svg";
 
