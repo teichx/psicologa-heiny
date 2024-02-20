@@ -10,8 +10,8 @@ const linkClass = "text-lg hover:text-[#000] hover:underline";
 
 export const Footer = () => (
   <footer style={{ backdropFilter: "blur(12px)" }}>
-    <div className="container px-5 mx-auto flex justify-between items-center py-[5%] z-2 relative text-[#2f2f2f] flex-wrap">
-      <div className="text-center w-full mx-auto mb-5 lg:w-3/12 lg:mx-0 lg:mb-0 max-w-[200px]">
+    <div className="container px-5 mx-auto flex justify-center items-center py-[5%] z-2 relative text-[#2f2f2f] flex-wrap">
+      <div className="text-center w-full mx-auto mb-5 lg:w-3/12 lg:mx-0 lg:mb-0 max-w-[200px] lg:mr-[9rem]">
         <div className="w-[200px]">
           <Butterfly className="h-full w-full" />
         </div>
@@ -38,8 +38,8 @@ export const Footer = () => (
         </div>
       </div>
 
-      <div className="w-full lg:w-8/12">
-        <div className="bg-[#2f2f2f] w-full h-[1px] opacity-60 mb-8" />
+      <div className="w-full max-w-[750px] lg:mt-[5rem]">
+        <div className="bg-[#969696] w-full h-[1px] opacity-60 mb-8" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
