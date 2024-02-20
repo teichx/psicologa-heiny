@@ -6,7 +6,7 @@ import AboutMeImage from "../images/232.jpg";
 import { Footer, Menu } from "../components";
 
 const IndexPage: FC<PageProps> = () => (
-  <div className="relative">
+  <div className="relative overflow-hidden">
     <Menu />
 
     <div className="absolute w-full h-full top-0 left-0 right-0 bottom-0 z-[-1]">
@@ -19,14 +19,14 @@ const IndexPage: FC<PageProps> = () => (
 
     <div id="home" className="text-[#222]">
       <div className="w-full min-h-screen flex justify-center items-center relative z-1">
-        <div className="container mx-auto flex flex-wrap items-center justify-around pt-[120px]">
-          <div className="w-full order-2 lg:w-5/12 lg:ml-1/12 xl:w-5/12 lg:order-none">
+        <div className="container mx-auto flex flex-wrap items-center justify-around pt-[120px] mx-[4rem]">
+          <div className="w-full order-2 sm:w-[550px] lg:w-5/12 lg:ml-1/12 xl:w-5/12 lg:order-none">
             <div className="w-full ml-auto text-right xl:w-[540px]">
               <h2 className="text-[1.35rem] font-light">
                 <span>Psicóloga clínica CRP 04/70574</span>
               </h2>
 
-              <h1 className="my-7 text-[#000] text-7xl wf-amsterdam-four wf-[amsterdam-four] wf-amsterdam wf-[amsterdam] font-amsterdam">
+              <h1 className="my-7 text-center text-[#000] text-[2.7rem] sm:text-[3.5rem] lg:text-[3.125rem] xl:text-7xl font-amsterdam leading-loose">
                 Heiny Domingos
               </h1>
 
