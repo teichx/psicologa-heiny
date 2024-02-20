@@ -97,7 +97,7 @@
     .mobile {
       .content {
         @apply invisible text-center opacity-0;
-        transition: opacity 0.25s 0;
+        transition: opacity 0.25s 0s;
         .menu-link {
           @apply w-[100%] mx-0 py-3;
         }
@@ -113,6 +113,9 @@
       animation: appear 0.75s;
       .butterfly-logo path {
         fill: #a77636;
+      }
+      .mobile .content.open {
+        color: #fff;
       }
     }
     &.menu-on-scroll {
