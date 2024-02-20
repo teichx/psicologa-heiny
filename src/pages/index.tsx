@@ -142,7 +142,9 @@ const IndexPage: FC<PageProps> = () => (
       </div>
     </section>
 
-    <Footer />
+    <div id="contact">
+      <Footer />
+    </div>
   </div>
 );
 
