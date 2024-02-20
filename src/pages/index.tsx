@@ -19,7 +19,7 @@ const IndexPage: FC<PageProps> = () => (
 
     <div id="home" className="text-[#222]">
       <div className="w-full min-h-screen flex justify-center items-center relative z-1">
-        <div className="container mx-auto flex flex-wrap items-center justify-around pt-[120px] mx-[4rem]">
+        <div className="container flex flex-wrap items-center justify-around pt-[120px] mx-[1rem] sm:mx-[4rem]">
           <div className="w-full order-2 sm:w-[550px] lg:w-5/12 lg:ml-1/12 xl:w-5/12 lg:order-none">
             <div className="w-full ml-auto text-right xl:w-[540px]">
               <h2 className="text-[1.35rem] font-light">
