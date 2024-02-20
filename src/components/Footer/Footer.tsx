@@ -6,12 +6,12 @@ import Whatsapp from "-!svg-react-loader!../../images/fontawesome/whatsapp.svg";
 import { FooterIcon } from "./FooterIcon";
 import { InternalLink } from "../InternalLink";
 
-const linkClass = "text-lg hover:text-linkColor hover:underline";
+const linkClass = "text-lg hover:text-[#000] hover:underline";
 
 export const Footer = () => (
   <footer style={{ backdropFilter: "blur(12px)" }}>
     <div className="container px-5 mx-auto flex justify-between items-center py-[5%] z-2 relative text-[#2f2f2f] flex-wrap">
-      <div className="w-full mx-auto mb-5 lg:w-3/12 lg:mx-0 lg:mb-0 max-w-[200px]">
+      <div className="text-center w-full mx-auto mb-5 lg:w-3/12 lg:mx-0 lg:mb-0 max-w-[200px]">
         <div className="w-[200px]">
           <Butterfly className="h-full w-full" />
         </div>
@@ -20,7 +20,7 @@ export const Footer = () => (
         <h3 className="font-crimson text-xl mx-2 mb-0">Psicóloga clínica</h3>
         <h3 className="font-crimson text-lg mx-2">CRP 04/ 70574</h3>
 
-        <div className="flex w-full justify-between align-center mt-5">
+        <div className="flex w-full justify-between align-center mt-5 px-3">
           <FooterIcon
             Icon={Envelope}
             href="mailto:psiheinydomingos@gmail.com"
@@ -41,14 +41,14 @@ export const Footer = () => (
       <div className="w-full lg:w-8/12">
         <div className="bg-[#2f2f2f] w-full h-[1px] opacity-60 mb-8" />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <p>Links</p>
 
             <div>
               <InternalLink
                 href="#home"
-                className="text-lg hover:text-linkColor hover:underline"
+                className="text-lg hover:text-[#000] hover:underline"
               >
                 Inicio
               </InternalLink>
@@ -56,7 +56,7 @@ export const Footer = () => (
             <div>
               <InternalLink
                 href="#services"
-                className="text-lg hover:text-linkColor hover:underline"
+                className="text-lg hover:text-[#000] hover:underline"
               >
                 Serviços
               </InternalLink>
@@ -64,7 +64,7 @@ export const Footer = () => (
             <div>
               <InternalLink
                 href="#about-me"
-                className="text-lg hover:text-linkColor hover:underline"
+                className="text-lg hover:text-[#000] hover:underline"
               >
                 Sobre mim
               </InternalLink>
@@ -72,17 +72,11 @@ export const Footer = () => (
             <div>
               <InternalLink
                 href="#contact"
-                className="text-lg hover:text-linkColor hover:underline"
+                className="text-lg hover:text-[#000] hover:underline"
               >
                 Contato
               </InternalLink>
             </div>
-          </div>
-
-          <div>
-            <p>Localização</p>
-
-            <p className="text-lg">Betim - Minas Gerais</p>
           </div>
 
           <div>

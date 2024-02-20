@@ -50,7 +50,7 @@ const IndexPage: FC<PageProps> = () => (
 
     <section
       id="services"
-      className="py-[5%] text-[#2f2f2f]"
+      className="py-[5%] text-[#2f2f2f] px-[1rem] sm:px-[4rem]"
       style={{
         background: "linear-gradient(-180deg, transparent, #ffffff)",
       }}
@@ -85,18 +85,19 @@ const IndexPage: FC<PageProps> = () => (
               Conselho Federal de Psicologia e deve seguir todos os princípios
               éticos e de sigilo, adotados em atendimentos presenciais. O
               atendimento ocorre através de plataformas de vídeo, como o Google
-              Meet.
+              Meet, e tem duração média de 50 minutos. Essa modalidade está
+              disponível para pessoas residentes em todo o Brasil e no mundo.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about-me" className="bg-white py-[5%]">
+    <section id="about-me" className="bg-white py-[5%] px-[1rem] sm:px-[4rem]">
       <div className="container px-5 mx-auto flex items-center justify-between flex-wrap">
         <div className="w-full mx-auto lg:w-5/12 lg:mx-0">
           <div className="w-100 h-0 pb-[100%] relative">
-            <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-[#1f707c]">
+            <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-[#A77636]">
               <img
                 src={AboutMeImage}
                 className="w-[98%] h-[98%] absolute top-[1%] left-[1%] object-cover rounded-full"
@@ -107,41 +108,40 @@ const IndexPage: FC<PageProps> = () => (
 
         <div className="w-full lg:w-6/12">
           <h2 className="font-crimson mb-6">Sobre mim</h2>
-          <p>
-            Olá, como vai? Me chamo Heiny Domingos de Freitas, sou formada em
-            Psicologia pela Faculdade Pitágoras, atuo através da abordagem
-            psicanalítica lacaniana.
-          </p>
-          <p>
-            Durante a minha trajetória acadêmica, trabalhei nos setores de
-            clínica, em escolas, projetos sociais. Possuo experiência com
-            temáticas como: ansiedade, depressão, relacionamentos amorosos,
-            alcoolismo, acompanhamento de gestantes, luto, questões familiares.
-          </p>
-          <p>
-            Acredito que a Psicologia é uma ferramenta fundamental para auxiliar
-            as pessoas a lidarem com seus conflitos internos, compreenderem suas
-            emoções e se desenvolverem pessoalmente. Por isso, tenho grande
-            satisfação em atuar nessa área e contribuir para o bem-estar dos
-            meus pacientes.
-          </p>
-          <p>
-            Acredito que a empatia, o respeito e a confidencialidade são
-            fundamentais em um processo terapêutico. Por isso, atendo meus
-            pacientes de forma individualizada, respeitando suas
-            particularidades e necessidades.
-          </p>
+          <div className="text-justify">
+            <p>
+              Olá, como vai? Me chamo Heiny Domingos de Freitas, sou formada em
+              Psicologia pela Faculdade Pitágoras, atuo através da abordagem
+              psicanalítica lacaniana.
+            </p>
+            <p>
+              Durante a minha trajetória acadêmica, trabalhei nos setores de
+              clínica, em escolas, projetos sociais. Possuo experiência com
+              temáticas como: ansiedade, depressão, relacionamentos amorosos,
+              alcoolismo, acompanhamento de gestantes, luto, questões
+              familiares.
+            </p>
+            <p>
+              Acredito que a Psicologia é uma ferramenta fundamental para
+              auxiliar as pessoas a lidarem com seus conflitos internos,
+              compreenderem suas emoções e se desenvolverem pessoalmente. Por
+              isso, tenho grande satisfação em atuar nessa área e contribuir
+              para o bem-estar dos meus pacientes.
+            </p>
+            <p>
+              Acredito que a empatia, o respeito e a confidencialidade são
+              fundamentais em um processo terapêutico. Por isso, atendo meus
+              pacientes de forma individualizada, respeitando suas
+              particularidades e necessidades.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section className="bg-gray-900 text-white">
-      <div className="container mx-auto px-5 py-[3.5%] text-3xl text-center">
-        {/* <p className=" text-[1.7rem]">
-          Este site não oferece tratamento ou aconselhamento imediato para
-          pessoas em crise ou risco de suicídio.
-        </p> */}
-        <p className=" text-[1.6rem]">
+    <section className="bg-gray-900 text-white px-[1rem] sm:px-[4rem]">
+      <div className="container mx-auto px-5 py-[3.5%] text-center">
+        <p>
           Em caso de crise, ligue para{" "}
           <a href="tel:+55188" className="text-[#d9606f] hover:underline">
             188 (CVV)
@@ -156,7 +156,7 @@ const IndexPage: FC<PageProps> = () => (
           </a>
           .
         </p>
-        <p className="mb-0 text-[1.6rem]">
+        <p className="mb-0">
           Em caso de emergência, procure atendimento em um hospital mais
           próximo.
         </p>
