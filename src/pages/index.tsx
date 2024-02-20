@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import FirsSectionBackground from "../images/background.jpg";
 import FirstSectionImage from "../images/with-circle-3.png";
 import AboutMeImage from "../images/232.jpg";
+import ServicesImage from "../images/DSC_0220-2.jpg";
 import { Footer, Menu } from "../components";
 
 const IndexPage: FC<PageProps> = () => (
@@ -48,58 +49,31 @@ const IndexPage: FC<PageProps> = () => (
       </div>
     </div>
 
-    <section
-      id="services"
-      className="py-[5%] text-[#2f2f2f] px-[1rem] sm:px-[4rem]"
-      style={{
-        background: "linear-gradient(-180deg, transparent, #ffffff)",
-      }}
-    >
-      <div className="container px-5 mx-auto">
-        <h2 className="mb-8 text-center">Serviços ofertados</h2>
-        <div>
-          <h3 className="mb-2">Temas que trabalho</h3>
-          <div className="flex flex-wrap">
-            <p className="w-[330px] mb-0">Ansiedade</p>
-            <p className="w-[330px] mb-0">Depressão</p>
-            <p className="w-[330px] mb-0">Conflitos familiares</p>
-            <p className="w-[330px] mb-0">Morte e luto</p>
-            <p className="w-[330px] mb-0">Adoecimento</p>
-            <p className="w-[330px] mb-0">Conflitos amorosos</p>
-            <p className="w-[330px] mb-0">Desenvolvimento pessoal</p>
-            <p className="w-[330px] mb-0">Sexualidade e identidade de gênero</p>
-          </div>
+    <section id="services" className="py-[5%] px-[1rem] sm:px-[4rem]">
+      <div className="container mx-auto flex justify-between items-center">
+        <div className="hidden lg:block w-6/12 rounded-2xl overflow-hidden">
+          <img src={ServicesImage} />
         </div>
 
-        <div className="my-8 h-[1px] bg-[#969696]" />
+        <div className="mt-6 w-full lg:w-5/12">
+          <div className="bg-[#A77636] text-[#fff] p-5 rounded-2xl">
+            <h2 className="mb-6 text-center">Atendimento Online</h2>
 
-        <div className="mt-6">
-          <h3 className="mb-6">Atendimento Online</h3>
-          <p className="text-justify">
-            O atendimento psicológico virtual é devidamente regulamentado pelo
-            Conselho Federal de Psicologia e deve seguir todos os princípios
-            éticos e de sigilo, adotados em atendimentos presenciais. O
-            atendimento ocorre através de plataformas de vídeo, como o Google
-            Meet, e tem duração média de 50 minutos. Essa modalidade está
-            disponível para pessoas residentes em todo o Brasil e no mundo.
-          </p>
+            <p className="text-justify">
+              O atendimento psicológico virtual é devidamente regulamentado pelo
+              Conselho Federal de Psicologia e deve seguir todos os princípios
+              éticos e de sigilo, adotados em atendimentos presenciais. O
+              atendimento ocorre através de plataformas de vídeo, como o Google
+              Meet, e tem duração média de 50 minutos. Essa modalidade está
+              disponível para pessoas residentes em todo o Brasil e no mundo.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about-me" className="bg-white py-[5%] px-[1rem] sm:px-[4rem]">
-      <div className="container px-5 mx-auto flex items-center justify-between flex-wrap">
-        <div className="w-full mx-auto lg:w-5/12 lg:mx-0">
-          <div className="w-100 h-0 pb-[100%] relative">
-            <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-[#A77636]">
-              <img
-                src={AboutMeImage}
-                className="w-[98%] h-[98%] absolute top-[1%] left-[1%] object-cover rounded-full"
-              />
-            </div>
-          </div>
-        </div>
-
+      <div className="container mx-auto flex items-center justify-between flex-wrap">
         <div className="w-full lg:w-6/12">
           <h2 className="mb-6">Sobre mim</h2>
           <div className="text-justify">
@@ -130,11 +104,22 @@ const IndexPage: FC<PageProps> = () => (
             </p>
           </div>
         </div>
+
+        <div className="w-full mx-auto lg:w-5/12 lg:mx-0 mt-6 lg:mt-0">
+          <div className="w-100 h-0 pb-[100%] relative">
+            <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-[#A77636]">
+              <img
+                src={AboutMeImage}
+                className="w-[98%] h-[98%] absolute top-[1%] left-[1%] object-cover rounded-full"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section className="bg-gray-900 text-white px-[1rem] sm:px-[4rem]">
-      <div className="container mx-auto px-5 py-[3.5%] text-center">
+      <div className="container mx-auto py-[3.5%] text-center">
         <p>
           Em caso de crise, ligue para{" "}
           <a href="tel:+55188" className="text-[#d9606f] hover:underline">

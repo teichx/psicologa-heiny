@@ -49,8 +49,8 @@ export const Footer = () => (
         <div className="bg-[#969696] w-full h-[1px] opacity-60 mb-8" />
 
         <div className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div>
+          <div className="flex justify-around flex-wrap gap-4">
+            <div className="w-full md:w-auto">
               <p>Links</p>
 
               <div>
@@ -87,7 +87,7 @@ export const Footer = () => (
               </div>
             </div>
 
-            <div>
+            <div className="w-full md:w-auto">
               <p>Contato</p>
 
               <div>
