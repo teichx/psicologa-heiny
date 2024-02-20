@@ -56,39 +56,33 @@ const IndexPage: FC<PageProps> = () => (
       }}
     >
       <div className="container px-5 mx-auto">
-        <div className="w-full flex flex-wrap items-stretch justify-between">
-          <div className="w-full xl:w-5/12 flex flex-col">
-            <h2 className="font-crimson">Serviços ofertados</h2>
-
-            <div className="mb-10 flex items-center">
-              <div>
-                <h3 className="font-crimson mt-4 mb-2">Temas que trabalho</h3>
-
-                <div className="md:grid md:grid-cols-2 2xl:grid-cols-[300px_330px]">
-                  <p className="mb-0">Ansiedade</p>
-                  <p className="mb-0">Depressão</p>
-                  <p className="mb-0">Conflitos familiares</p>
-                  <p className="mb-0">Morte e luto</p>
-                  <p className="mb-0">Adoecimento</p>
-                  <p className="mb-0">Conflitos amorosos</p>
-                  <p className="mb-0">Desenvolvimento pessoal</p>
-                  <p className="mb-0">Sexualidade e identidade de gênero</p>
-                </div>
-              </div>
-            </div>
+        <h2 className="mb-8 text-center">Serviços ofertados</h2>
+        <div>
+          <h3 className="mb-2">Temas que trabalho</h3>
+          <div className="flex flex-wrap">
+            <p className="w-[330px] mb-0">Ansiedade</p>
+            <p className="w-[330px] mb-0">Depressão</p>
+            <p className="w-[330px] mb-0">Conflitos familiares</p>
+            <p className="w-[330px] mb-0">Morte e luto</p>
+            <p className="w-[330px] mb-0">Adoecimento</p>
+            <p className="w-[330px] mb-0">Conflitos amorosos</p>
+            <p className="w-[330px] mb-0">Desenvolvimento pessoal</p>
+            <p className="w-[330px] mb-0">Sexualidade e identidade de gênero</p>
           </div>
+        </div>
 
-          <div className="w-full xl:w-6/12 border border-[#1f707c] p-5 rounded mb-5">
-            <h3 className="font-crimson mb-6">Atendimento Online</h3>
-            <p className="text-xl mb-0">
-              O atendimento psicológico virtual é devidamente regulamentado pelo
-              Conselho Federal de Psicologia e deve seguir todos os princípios
-              éticos e de sigilo, adotados em atendimentos presenciais. O
-              atendimento ocorre através de plataformas de vídeo, como o Google
-              Meet, e tem duração média de 50 minutos. Essa modalidade está
-              disponível para pessoas residentes em todo o Brasil e no mundo.
-            </p>
-          </div>
+        <div className="my-8 h-[1px] bg-[#969696]" />
+
+        <div className="mt-6">
+          <h3 className="mb-6">Atendimento Online</h3>
+          <p className="text-justify">
+            O atendimento psicológico virtual é devidamente regulamentado pelo
+            Conselho Federal de Psicologia e deve seguir todos os princípios
+            éticos e de sigilo, adotados em atendimentos presenciais. O
+            atendimento ocorre através de plataformas de vídeo, como o Google
+            Meet, e tem duração média de 50 minutos. Essa modalidade está
+            disponível para pessoas residentes em todo o Brasil e no mundo.
+          </p>
         </div>
       </div>
     </section>
@@ -107,7 +101,7 @@ const IndexPage: FC<PageProps> = () => (
         </div>
 
         <div className="w-full lg:w-6/12">
-          <h2 className="font-crimson mb-6">Sobre mim</h2>
+          <h2 className="mb-6">Sobre mim</h2>
           <div className="text-justify">
             <p>
               Olá, como vai? Me chamo Heiny Domingos de Freitas, sou formada em
