@@ -27,11 +27,11 @@ const IndexPage: FC<PageProps> = () => (
                 <span>Psicóloga clínica CRP 04/70574</span>
               </h2>
 
-              <h1 className="my-7 text-center text-[#000] text-[2.7rem] sm:text-[3.5rem] lg:text-[3.125rem] xl:text-7xl font-amsterdam leading-loose">
+              <h1 className="my-0 lg:my-7 text-center text-[#000] text-[2.7rem] sm:text-[3.5rem] lg:text-[3.125rem] xl:text-7xl font-amsterdam leading-loose">
                 Heiny Domingos
               </h1>
 
-              <div className="mt-[5rem]">
+              <div className="mt-[3rem] md:mt-[5rem]">
                 <h3 className="text-[1.5rem] ml-auto mr-0 text-center sm:max-w-full">
                   A Psicanálise é, em sua essência, <br /> uma cura pelo amor!
                 </h3>
@@ -54,11 +54,11 @@ const IndexPage: FC<PageProps> = () => (
       className="py-[12.5%] lg:py-[5%] px-[1rem] sm:px-[4rem]"
     >
       <div className="container mx-auto flex justify-between items-center flex-wrap">
-        <div className="w-full lg:w-6/12 rounded-2xl overflow-hidden">
+        <div className="w-full lg:w-6/12 rounded-2xl overflow-hidden order-2">
           <img src={ServicesImage} />
         </div>
 
-        <div className="mt-6 w-full lg:w-5/12">
+        <div className="my-6 w-full lg:w-5/12 lg:order-3">
           <div className="bg-[#A77636] text-[#fff] p-5 rounded-2xl">
             <h2 className="mb-6 text-center">Atendimento Online</h2>
 
