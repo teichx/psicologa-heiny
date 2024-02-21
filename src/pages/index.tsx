@@ -40,7 +40,7 @@ const IndexPage: FC<PageProps> = () => (
             </div>
           </div>
 
-          <div className="w-full mx-auto mb-8 lg:mb-0 lg:w-6/12 lg:mx-0">
+          <div className="w-9/12 mx-auto mb-8 lg:mb-0 lg:w-6/12 lg:mx-0">
             <div className="w-full mx-auto max-w-[440px] 2xl:max-w-[520px]">
               <img src={FirstSectionImage} className="w-[100%] h-auto" />
             </div>
