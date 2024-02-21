@@ -12,7 +12,7 @@ export const Footer = () => (
   <footer style={{ backdropFilter: "blur(12px)" }}>
     <div className="container px-5 mx-auto flex justify-center items-center py-[5%] z-2 relative text-[#2f2f2f] flex-wrap">
       <div className="w-full max-w-[750px]">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-center sm:justify-between items-center flex-wrap my-4">
           <div className="flex items-center">
             <div className="w-[200px]">
               <Butterfly className="h-full w-full" />
@@ -27,7 +27,7 @@ export const Footer = () => (
           </div>
 
           <div>
-            <div className="ml-5 grid grid-cols-3 gap-3">
+            <div className="ml-5 grid grid-cols-3 gap-3 w-[164px]">
               <FooterIcon
                 Icon={Envelope}
                 href="mailto:psiheinydomingos@gmail.com"
@@ -91,7 +91,10 @@ export const Footer = () => (
               <p>Contato</p>
 
               <div>
-                <a href="tel:31991263286" className={linkClass}>
+                <a
+                  href="https://wa.me/5531991263286?text=Ol%C3%A1%2C+vim+pelo+seu+site%2C+gostaria+de+saber+mais."
+                  className={linkClass}
+                >
                   (31) 9 9126-3286
                 </a>
               </div>

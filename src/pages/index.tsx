@@ -49,9 +49,12 @@ const IndexPage: FC<PageProps> = () => (
       </div>
     </div>
 
-    <section id="services" className="py-[5%] px-[1rem] sm:px-[4rem]">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="hidden lg:block w-6/12 rounded-2xl overflow-hidden">
+    <section
+      id="services"
+      className="py-[12.5%] lg:py-[5%] px-[1rem] sm:px-[4rem]"
+    >
+      <div className="container mx-auto flex justify-between items-center flex-wrap">
+        <div className="w-full lg:w-6/12 rounded-2xl overflow-hidden">
           <img src={ServicesImage} />
         </div>
 
@@ -72,7 +75,10 @@ const IndexPage: FC<PageProps> = () => (
       </div>
     </section>
 
-    <section id="about-me" className="bg-white py-[5%] px-[1rem] sm:px-[4rem]">
+    <section
+      id="about-me"
+      className="bg-white py-[12.5%] lg:py-[5%] px-[1rem] sm:px-[4rem]"
+    >
       <div className="container mx-auto flex items-center justify-between flex-wrap">
         <div className="w-full lg:w-6/12">
           <h2 className="mb-6">Sobre mim</h2>
@@ -119,7 +125,7 @@ const IndexPage: FC<PageProps> = () => (
     </section>
 
     <section className="bg-gray-900 text-white px-[1rem] sm:px-[4rem]">
-      <div className="container mx-auto py-[3.5%] text-center">
+      <div className="container mx-auto py-[12.5%] lg:py-[3.5%] text-center">
         <p>
           Em caso de crise, ligue para{" "}
           <a href="tel:+55188" className="text-[#d9606f] hover:underline">
