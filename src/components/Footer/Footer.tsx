@@ -26,8 +26,8 @@ export const Footer = () => (
             </div>
           </div>
 
-          <div>
-            <div className="ml-5 grid grid-cols-3 gap-3 w-[164px]">
+          <div className="ml-[140px] md:ml-auto">
+            <div className="ml-0 md:ml-5 grid grid-cols-3 gap-3 w-[164px]">
               <FooterIcon
                 Icon={Envelope}
                 href="mailto:psiheinydomingos@gmail.com"
