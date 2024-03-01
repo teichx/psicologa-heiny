@@ -10,10 +10,10 @@ const IndexPage: FC<PageProps> = () => (
   <div className="relative overflow-hidden">
     <Menu />
 
-    <div className="absolute w-full h-full top-0 left-0 right-0 bottom-0 z-[-1]">
+    <div className="absolute w-full h-full top-0 left-0 right-0 bottom-0 z-[-1] bg-[#d3d3d1]">
       <img
         src={FirsSectionBackground}
-        className="fixed w-full h-full top-0 left-0 right-0 bottom-0 object-cover bg-[#d3d3d1]"
+        className="fixed w-full h-full top-0 left-0 right-0 bottom-0 object-cover"
         style={{ filter: "blur(6px)" }}
         alt="Background"
         width="100%"
@@ -178,13 +178,5 @@ export default IndexPage;
 export const Head: HeadFC = () => (
   <>
     <title>Heiny Domingos - Psicóloga clínica</title>
-
-    <link
-      rel="preload"
-      href="/fonts/amsterdam-four.woff2"
-      as="font"
-      type="font/woff2"
-      crossOrigin="anonymous"
-    />
   </>
 );
