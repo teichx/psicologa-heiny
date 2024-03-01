@@ -15,7 +15,7 @@ export const Footer = () => (
         <div className="flex justify-center sm:justify-between items-center flex-wrap my-4">
           <div className="flex items-center">
             <div className="w-[200px]">
-              <Butterfly className="h-full w-full" />
+              <Butterfly className="h-full w-full" alt="Icon" />
             </div>
 
             <div>
@@ -29,16 +29,19 @@ export const Footer = () => (
           <div className="ml-[140px] md:ml-auto">
             <div className="ml-0 md:ml-5 grid grid-cols-3 gap-3 w-[164px]">
               <FooterIcon
+                alt="psiheinydomingos@gmail.com"
                 Icon={Envelope}
                 href="mailto:psiheinydomingos@gmail.com"
               />
 
               <FooterIcon
+                alt="Whatsapp"
                 Icon={Whatsapp}
                 href="https://wa.me/5531991263286?text=Ol%C3%A1%2C+vim+pelo+seu+site%2C+gostaria+de+saber+mais."
               />
 
               <FooterIcon
+                alt="https://www.instagram.com/psi.heinydomingos/"
                 Icon={Instagram}
                 href="https://www.instagram.com/psi.heinydomingos/"
               />
