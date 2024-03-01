@@ -16,6 +16,8 @@ const IndexPage: FC<PageProps> = () => (
         className="fixed w-full h-full top-0 left-0 right-0 bottom-0 object-cover bg-[#d3d3d1]"
         style={{ filter: "blur(6px)" }}
         alt="Background"
+        width="100%"
+        height="100%"
       />
     </div>
 
@@ -47,6 +49,8 @@ const IndexPage: FC<PageProps> = () => (
             <div className="w-full mx-auto max-w-[440px] 2xl:max-w-[520px]">
               <img
                 src={FirstSectionImage}
+                width={520}
+                height={555}
                 className="w-[100%] h-auto"
                 alt="Foto da Psicóloga Heiny Domingos"
               />
@@ -62,7 +66,12 @@ const IndexPage: FC<PageProps> = () => (
     >
       <div className="container mx-auto flex justify-between items-center flex-wrap">
         <div className="w-full lg:w-6/12 rounded-2xl overflow-hidden order-2">
-          <img src={ServicesImage} alt="Foto da Psicóloga Heiny Domingos" />
+          <img
+            src={ServicesImage}
+            alt="Foto da Psicóloga Heiny Domingos"
+            width={768}
+            height={512}
+          />
         </div>
 
         <div className="my-6 w-full lg:w-5/12 lg:order-3">
@@ -123,6 +132,8 @@ const IndexPage: FC<PageProps> = () => (
             <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-[#A77636]">
               <img
                 src={AboutMeImage}
+                width={619}
+                height={619}
                 alt="Foto da Psicóloga Heiny Domingos"
                 className="w-[98%] h-[98%] absolute top-[1%] left-[1%] object-cover rounded-full"
               />
