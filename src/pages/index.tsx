@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import FirsSectionBackground from "../images/background.jpg";
-import FirstSectionImage from "../images/with-circle-3.png";
-import AboutMeImage from "../images/232.jpg";
-import ServicesImage from "../images/DSC_0220-2.jpg";
+import FirsSectionBackground from "../images/background.webp";
+import FirstSectionImage from "../images/with-circle-3-resized_1.webp";
+import AboutMeImage from "../images/232-resized.webp";
+import ServicesImage from "../images/DSC_0220-2-resized.webp";
 import { Footer, Menu } from "../components";
 
 const IndexPage: FC<PageProps> = () => (
