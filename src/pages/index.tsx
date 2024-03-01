@@ -18,6 +18,7 @@ const IndexPage: FC<PageProps> = () => (
         alt="Background"
         width="100%"
         height="100%"
+        loading="lazy"
       />
     </div>
 
@@ -49,6 +50,7 @@ const IndexPage: FC<PageProps> = () => (
             <div className="w-full mx-auto max-w-[440px] 2xl:max-w-[520px]">
               <img
                 src={FirstSectionImage}
+                loading="lazy"
                 width={520}
                 height={555}
                 className="w-[100%] h-auto"
@@ -71,6 +73,7 @@ const IndexPage: FC<PageProps> = () => (
             alt="Foto da Psicóloga Heiny Domingos"
             width={768}
             height={512}
+            loading="lazy"
           />
         </div>
 
@@ -132,6 +135,7 @@ const IndexPage: FC<PageProps> = () => (
             <div className="rounded-full absolute h-full w-full overflow-hidden border-4 border-[#A77636]">
               <img
                 src={AboutMeImage}
+                loading="lazy"
                 width={619}
                 height={619}
                 alt="Foto da Psicóloga Heiny Domingos"
