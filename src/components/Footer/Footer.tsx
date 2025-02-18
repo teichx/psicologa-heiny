@@ -37,7 +37,7 @@ export const Footer = () => (
               <FooterIcon
                 alt="Whatsapp"
                 Icon={Whatsapp}
-                href="https://wa.me/5531991263286?text=Ol%C3%A1%2C+vim+pelo+seu+site%2C+gostaria+de+saber+mais."
+                href="https://wa.me/553197828268?text=Ol%C3%A1%2C+vim+pelo+seu+site%2C+gostaria+de+saber+mais."
               />
 
               <FooterIcon
@@ -95,10 +95,10 @@ export const Footer = () => (
 
               <div>
                 <a
-                  href="https://wa.me/5531991263286?text=Ol%C3%A1%2C+vim+pelo+seu+site%2C+gostaria+de+saber+mais."
+                  href="https://wa.me/553197828268?text=Ol%C3%A1%2C+vim+pelo+seu+site%2C+gostaria+de+saber+mais."
                   className={linkClass}
                 >
-                  (31) 9 9126-3286
+                  (31) 9782-8268
                 </a>
               </div>
 
